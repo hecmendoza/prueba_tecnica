@@ -21,7 +21,7 @@
                 <tr>
                     <td>@user.Id</td>
                     <td>@user.Name</td>
-                    <td>@user.Birthdate</td>
+                    <td>@user.Birthdate.ToString("dd/MM/yyyy")</td>
                     <td>@user.Sex</td>
                     <td>
                         <a href="@Url.Action("SearchUser", "User", new {id= @user.Id})">
